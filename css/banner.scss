@@ -1,0 +1,67 @@
+//banner
+@use './base.scss';
+
+.banner{
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/h1_hero1.jpg.webp);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    .container{
+        .banner-text{
+            h1 {
+                font-size: 72px;
+                font-weight: 500;
+                margin-bottom: 50px;
+                color: base.$white-color;
+                font-family: base.$secondery-fonts;
+                line-height: 1.1;
+                letter-spacing: -2.5px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 107px;
+                    height: 4px;
+                    bottom: -26px;
+                    left: 0;
+                    background:base.$white-color;
+                }
+            }
+            p {
+                color: base.$white-color;
+                margin-bottom: 41px;
+                font-size: 20px;
+                font-family: base.$primary-fonts;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+
+        }
+        .banner-btn{
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                border: 2px solid base.$white-color;
+                padding: 17px 34px;
+                font-size: 18px;
+                color: base.$white-color;
+                font-family: base.$secondery-fonts;
+                transition: all 0.5s;          
+                
+                &:hover{
+                    background-color: #316EC2;
+                    border-color: #246fd9;
+                }
+            }
+        }
+    }
+}
+

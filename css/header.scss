@@ -1,0 +1,117 @@
+
+@use './base.scss';
+
+.top-bar{
+    width:100%;
+    .row{
+        border-bottom: 1px solid #D3D5E2;
+    }
+    .contact{
+        span{
+            font-size: 16px;
+            font-family: base.$primary-fonts;
+            color: base.$description-color;
+            display: flex;
+            padding-top: 13px;
+            padding-bottom: 13px;
+        }
+    }
+    .social {
+        a{
+            text-decoration: none;
+            color: base.$title-color;
+            padding: 13px 0;
+            i{
+                padding-left: 20px;
+                transition: all 0.5s;
+                &:hover{
+                    transform:scale(1.2);
+                    color:#0d6efd;
+                }
+            }
+           
+        }
+    }
+}
+
+// menu-bar
+
+.menu-bar{
+    width: 100%;
+    height: 100%;
+    .m-btn{
+        i{
+            display: none;
+        }
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        a{
+            text-decoration: none;
+            font-size: 18px;
+            font-family: base.$primary-fonts;
+            color: base.$title-color;
+            padding: 29px 13px;
+            transition: all 0.5s;
+            &:hover{
+                color: #316EC2;
+            }
+        }
+    }
+    .menu-other{
+        display: flex;
+        justify-content: flex-end;
+        align-items:center ;
+        .menu-btn {
+            padding-right:25px ;
+            a {
+                text-decoration: none;
+                span{
+                    padding: 10px 30px;
+                    border:2px solid #316EC2 ;
+                    color: #316EC2;
+                    font-size: 17px;
+                    font-weight: 500;
+                    font-family: base.$primary-fonts;
+                    transition: all 0.5s;
+
+                    &:hover{
+                        background-color: #316EC2;
+                        color: base.$white-color;
+                    }
+                }
+            }
+        }
+        img{
+            width: 41px;
+            height: 35px;
+        }
+        .menu-question {
+            cursor: pointer;
+            .w-9{
+                padding-left:0 ;
+                padding-right:0 ;
+            }
+            .w-3{
+                padding-left:0 ;
+            }
+            span{
+                font-size: 14px;
+                font-family: base.$primary-fonts;
+                color: #9e9bac;
+            }
+            p{
+                font-size: 16px;
+                font-family: base.$primary-fonts;
+                color: base.$title-color;
+                font-weight: 500;
+                padding-top: 2px;
+            }
+        }
+    }
+}

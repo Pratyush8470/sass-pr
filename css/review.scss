@@ -1,0 +1,67 @@
+@use './base.scss';
+
+.review{
+    width: 100%;
+    background-color: #EBF0F8;
+    .review-title{
+        text-align: center;
+        span{
+            font-size: 14px;
+            font-family: base.$primary-fonts;
+            letter-spacing: 3px;
+            color: #316ec2;
+            display: block;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+            font-family: base.$secondery-fonts;
+            margin-bottom: 35px;
+            color: base.$title-color;
+            font-weight: 500;
+        }
+    }
+    .review-text{
+        padding: 50px 29px 40px 30px;
+        background-color: #fff;
+        margin-right: 20px;
+        ul{
+            list-style: none;
+            color: #316EC2;
+            li{
+                padding-right: 5px;
+                font-size: 14px;
+                margin-bottom: 22px;
+            }
+        }
+        a{
+            font-size: 20px;
+            display: block;
+            font-family: base.$secondery-fonts;
+            margin-bottom: 14px;
+            color: base.$title-color;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all .5s;
+            &:hover{
+                color: #316ec2;
+            }
+        }
+        p{
+            font-size: 16px;
+            display: block;
+            font-family: base.$primary-fonts;
+            margin-bottom: 25px;
+            color: #4C526E;
+            font-weight: 500;
+        }
+        span{
+            font-size: 14px;
+            display: block;
+            font-family: base.$primary-fonts;
+            margin-bottom: 15px;
+            color:#003072;
+            font-weight: 500;
+        }
+    }
+}

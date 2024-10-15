@@ -1,0 +1,49 @@
+@use './base.scss';
+
+.services{
+    width: 100%;
+    display: block;
+
+    .title{
+       text-align: center;
+       span{
+            font-size: 14px;
+            font-family: base.$primary-fonts;
+            color: #316EC2;
+            letter-spacing: 2px;
+            font-weight: 400;
+       }
+       h1{
+            font-size: 40px;
+            font-family: base.$secondery-fonts;
+            color:base.$title-color;
+            font-weight: 500;
+            letter-spacing: -1px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+       }
+       p{
+            font-size: 18px;
+            font-family: base.$primary-fonts;
+            color: #4C526E;
+            margin-bottom: 15px;
+       }
+    }
+    .service-content{
+        padding: 50px 25px;
+        background-color: red;
+        margin: 100px 50px;
+        i{
+            text-align: center;
+            margin-bottom:25px;
+            font-size: 45px;
+        }
+        h5{
+            font-size: 20px;
+            font-family: base.$secondery-fonts;
+            color: base.$title-color;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}

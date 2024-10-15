@@ -1,0 +1,50 @@
+@use './base.scss';
+
+
+.case-study{
+    width: 100%;
+    .case-title{
+        text-align: center;
+        span{
+            font-size: 14px;
+            font-family: base.$primary-fonts;
+            letter-spacing: 3px;
+            color: #316ec2;
+            display: block;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+            font-family: base.$secondery-fonts;
+            margin-bottom: 35px;
+            color: base.$title-color;
+            font-weight: 500;
+        }
+    }
+    .case-content{
+        a{
+            font-size: 24px;
+            font-family: base.$secondery-fonts;
+            color: base.$title-color;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            display: block;
+            transition: all .5s;
+            
+            &:hover{
+                color: #316ec2;
+            }
+        }
+        span{
+            
+            color: #4C526E;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            font-family:  base.$primary-fonts;
+        }
+    }
+    
+}
